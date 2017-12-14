@@ -16,7 +16,7 @@ import zerorpc
 from psdash import __version__
 from psdash.node import LocalNode, RemoteNode
 from psdash.run import PsDashRunner
-
+from datetime import datetime, timedelta
 
 logger = getLogger('psdash.run')
 
@@ -46,9 +46,9 @@ class DashRunner(PsDashRunner):
 
 
 def main():
-    r = PsDashRunner.create_from_cli_args()
+    r=DashRunner.create_from_cli_args()
     r.run()
-    
+
 
 if __name__ == '__main__':
     main()
