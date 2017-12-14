@@ -1,6 +1,6 @@
 # psdash_HTTPBasicAuth
 
-**1.主节点和agent节点都执行下面的命令**
+**1.主节点和agent节点都执行下面的命令(安装psdash)**
 
 >yum groupinstall "Development Tools"  -y
 
@@ -26,7 +26,7 @@
 
 >python run.py -l '/var/log/**/*.log'     
 
-**-l '日志目录'   支持.*?**
+-l '日志目录'   支持.*?
 
 **3.agent节点执行**
 
