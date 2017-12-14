@@ -1,6 +1,6 @@
 # psdash_HTTPBasicAuth
 
->主节点和agent节点都执行下面的命令
+**1.主节点和agent节点都执行下面的命令**
 
 >yum groupinstall "Development Tools"  -y
 
@@ -16,7 +16,7 @@
 
 >python setup.py install
 
->主节点执行
+**2.主节点执行**
 
 >pip install flask-httpauth
 
@@ -28,7 +28,7 @@
 
 **-l '日志目录'   支持.*?**
 
->agent节点执行
+**3.agent节点执行**
 
 >psdash -a --register-as xxx -l '/var/log/**/*.log' --register-to http://主节点IP:5000
 
