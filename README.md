@@ -70,4 +70,8 @@ xxx为下面的参数, yyy为值, 比如
     app.config.PSDASH_HTTPS_CERTFILE	= '/home/user/certificate.crt'
     app.config.PSDASH_ENVIRON_WHITELIST = ['HOME']
 
-详细说明请参考https://github.com/Jahaja/psdash#configuration
+参数详细说明请参考https://github.com/Jahaja/psdash#configuration
+
+修改用户名密码：
+
+    修改web.py里的users = {"admin": "admin",}   前面是用户名后面是密码，可以添加多个用户
