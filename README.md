@@ -1,6 +1,11 @@
 # psdash_HTTPBasicAuth
 
 **1.主节点和agent节点都执行下面的命令(安装psdash)**
+>Debian/Ubuntu:
+
+>apt-get install build-essential python-dev -y
+
+>RHEL (Fedora, CentOS):
 
 >yum groupinstall "Development Tools"  -y
 
