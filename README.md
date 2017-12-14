@@ -37,38 +37,22 @@
 
 ## 如何修改参数？
 
-在run.py的app = Flask(__name__)下面添加如下语句
-
-app.config.xxx = yyy
-
-xxx为下面的参数，yyy为值,比如
-
-PSDASH_ALLOWED_REMOTE_ADDRESSES = "10.0.0.2, 192.29.20.2"
-
-PSDASH_URL_PREFIX = "/psdash"
-
-PSDASH_LOG_LEVEL = logging.INFO
-
-PSDASH_LOG_LEVEL = "%(levelname)s"
-
-PSDASH_NODES = [{'name': 'mywebnode', 'host': '10.0.0.2', 'port': 5000}]
-
-PSDASH_NET_IO_COUNTER_INTERVAL = 3
-
-PSDASH_LOGS_INTERVAL = 60
-
-PSDASH_REGISTER_INTERVAL = 60
-
-PSDASH_LOGS	= ['/var/log/*.log']
-
-PSDASH_REGISTER_TO = 'http://10.0.20.2:5000'
-
-PSDASH_REGISTER_AS = 'myvps'
-
-PSDASH_HTTPS_KEYFILE = '/home/user/private.key'
-
-PSDASH_HTTPS_CERTFILE	= '/home/user/certificate.crt'
-
-PSDASH_ENVIRON_WHITELIST = ['HOME']
+    在run.py的app = Flask(__name__)下面添加如下语句
+    app.config.xxx = yyy
+    xxx为下面的参数，yyy为值,比如
+    PSDASH_ALLOWED_REMOTE_ADDRESSES = "10.0.0.2, 192.29.20.2"
+    PSDASH_URL_PREFIX = "/psdash"
+    PSDASH_LOG_LEVEL = logging.INFO
+    PSDASH_LOG_LEVEL = "%(levelname)s"
+    PSDASH_NODES = [{'name': 'mywebnode', 'host': '10.0.0.2', 'port': 5000}]
+    PSDASH_NET_IO_COUNTER_INTERVAL = 3
+    PSDASH_LOGS_INTERVAL = 60
+    PSDASH_REGISTER_INTERVAL = 60
+    PSDASH_LOGS	= ['/var/log/*.log']
+    PSDASH_REGISTER_TO = 'http://10.0.20.2:5000'
+    PSDASH_REGISTER_AS = 'myvps'
+    PSDASH_HTTPS_KEYFILE = '/home/user/private.key'
+    PSDASH_HTTPS_CERTFILE	= '/home/user/certificate.crt'
+    PSDASH_ENVIRON_WHITELIST = ['HOME']
 
 详细说明请参考https://github.com/Jahaja/psdash#configuration
