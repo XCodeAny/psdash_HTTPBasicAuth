@@ -38,7 +38,9 @@
 ## 如何修改参数？
 
 在run.py的app = Flask(__name__)下面添加如下语句
+
 app.config.xxx = yyy
+
 xxx为下面的参数，yyy为值,比如
 
     PSDASH_ALLOWED_REMOTE_ADDRESSES = "10.0.0.2, 192.29.20.2"
