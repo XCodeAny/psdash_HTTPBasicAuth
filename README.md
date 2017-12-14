@@ -1,6 +1,6 @@
 # psdash_HTTPBasicAuth
 
-简介：基于psdash的基础上添加httpbasicauth，可自定义模板
+简介：基于psdash的基础上添加httpbasicauth（也就是打开页面弹出提示框，要输入用户名密码），可自定义模板
 
 功能：psdash的所有功能：支持多节点/集群部署，所有数据每3秒自动更新，无法手动刷新页面；
     
