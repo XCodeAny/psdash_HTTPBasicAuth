@@ -1,29 +1,16 @@
 # psdash_HTTPBasicAuth
 
-简介：基于psdash的基础上添加httpbasicauth，且可自定义模板
+简介：基于psdash的基础上添加httpbasicauth，可自定义模板
 
-功能：psdash的所有功能：
+功能：psdash的所有功能：支持多节点/集群部署，所有数据每3秒自动更新，无法手动刷新页面；
 
-        Overview
-        Dashboard overview of the system displaying data on cpu, disks, network, users, memory, swap and network.
-        Processes
-        List processes (top like) and view detailed process information about each process.
-        Apart from a detailed process overview this is also available for each process:
-        Open files
-        Open connections
-        Memory maps
-        Child processes
-        Resource limits
-        Disks
-        List info on all disks and partitions.
-        Network
-        List info on all network interfaces and the current throughput. System-wide open connections listing with filtering. Somewhat like netstat.
-        Logs
-        Tail and search logs. The logs are added by patterns (like /var/log/*.log) which are checked periodically to account for new or deleted files.
-        Multi-node/Cluster Support for multiple agent nodes that is either specified by a config or will register themselves on start-up to a common psdash node that runs the web interface.
-        All data is updated automatically, no need to refresh
-        The GUI is pretty much a modified bootstrap example as I'm no designer at all. If you got a feel for design and like to improve the UI parts of psdash, please create a pull request with your changes. It would be much appreciated as there's much room for improvements.
-
+        总览页：支持查看cpu, disks, network, users, memory, swap , network.
+        进程：进程列表，并展示每个进程详情，包括打开的文件数、打开的连接数、内存占用、子进程、资源限制.
+        硬盘：所有硬盘和分区
+        网络：所有网络接口和使用的流量，以及当前的网络连接
+        日志：展现自定义的日志文件详情，并支持搜索文件内容
+        特点：支持多节点/集群部署，所有数据每3秒自动更新，无法手动刷新页面
+        
 **1.主节点和agent节点都执行下面的命令(安装psdash)**
 >Debian/Ubuntu:
 
