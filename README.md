@@ -34,7 +34,7 @@
 
 ##如何修改参数？
 
-在run.py的_create_app函数下添加
+在run.py的app = Flask(__name__)下面添加如下语句
 
 app.config.xxx = yyy
 
