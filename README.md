@@ -41,21 +41,21 @@
 
 app.config.xxx = yyy
 
-xxx为下面的参数，yyy为值,比如
+xxx为下面的参数, yyy为值, 比如
 
-    PSDASH_ALLOWED_REMOTE_ADDRESSES = "10.0.0.2, 192.29.20.2"
-    PSDASH_URL_PREFIX = "/psdash"
-    PSDASH_LOG_LEVEL = logging.INFO
-    PSDASH_LOG_LEVEL = "%(levelname)s"
-    PSDASH_NODES = [{'name': 'mywebnode', 'host': '10.0.0.2', 'port': 5000}]
-    PSDASH_NET_IO_COUNTER_INTERVAL = 3
-    PSDASH_LOGS_INTERVAL = 60
-    PSDASH_REGISTER_INTERVAL = 60
-    PSDASH_LOGS	= ['/var/log/*.log']
-    PSDASH_REGISTER_TO = 'http://10.0.20.2:5000'
-    PSDASH_REGISTER_AS = 'myvps'
-    PSDASH_HTTPS_KEYFILE = '/home/user/private.key'
-    PSDASH_HTTPS_CERTFILE	= '/home/user/certificate.crt'
-    PSDASH_ENVIRON_WHITELIST = ['HOME']
+    app.config.PSDASH_ALLOWED_REMOTE_ADDRESSES = "10.0.0.2, 192.29.20.2"
+    app.config.PSDASH_URL_PREFIX = "/psdash"
+    app.config.PSDASH_LOG_LEVEL = logging.INFO
+    app.config.PSDASH_LOG_LEVEL = "%(levelname)s"
+    app.config.PSDASH_NODES = [{'name': 'mywebnode', 'host': '10.0.0.2', 'port': 5000}]
+    app.config.PSDASH_NET_IO_COUNTER_INTERVAL = 3
+    app.config.PSDASH_LOGS_INTERVAL = 60
+    app.config.PSDASH_REGISTER_INTERVAL = 60
+    app.config.PSDASH_LOGS	= ['/var/log/*.log']
+    app.config.PSDASH_REGISTER_TO = 'http://10.0.20.2:5000'
+    app.config.PSDASH_REGISTER_AS = 'myvps'
+    app.config.PSDASH_HTTPS_KEYFILE = '/home/user/private.key'
+    app.config.PSDASH_HTTPS_CERTFILE	= '/home/user/certificate.crt'
+    app.config.PSDASH_ENVIRON_WHITELIST = ['HOME']
 
 详细说明请参考https://github.com/Jahaja/psdash#configuration
