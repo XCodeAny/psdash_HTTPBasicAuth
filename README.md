@@ -8,6 +8,7 @@
 >RHEL (Fedora, CentOS):
 
 >>\# yum groupinstall "Development Tools"  -y
+
 >>\# yum install python-devel  -y
 
 >>\# yum install python-setuptools  -y
@@ -22,17 +23,17 @@
 
 **2.主节点执行**
 
->>\# pip install flask-httpauth
+>\# pip install flask-httpauth
 
->>\# git clone https://github.com/wenguonideshou/psdash_HTTPBasicAuth.git
+>\# git clone https://github.com/wenguonideshou/psdash_HTTPBasicAuth.git
 
->>\# cd psdash_HTTPBasicAuth
+>\# cd psdash_HTTPBasicAuth
 
->>\# python run.py -l '/var/log/**/*.log'     
+>\# python run.py -l '/var/log/**/*.log'     
 
 **3.agent节点执行**
 
->>\# psdash -a --register-as xxx -l '/var/log/**/*.log' --register-to http://主节点IP:5000
+>\# psdash -a --register-as xxx -l '/var/log/**/*.log' --register-to http://主节点IP:5000
 
 ## 如何修改参数？
 
