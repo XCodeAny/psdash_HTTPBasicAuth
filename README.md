@@ -1,5 +1,28 @@
 # psdash_HTTPBasicAuth
 
+简介：基于psdash的基础上添加httpbasicauth，且可自定义模板
+
+功能：psdash的所有功能：
+        Overview
+        Dashboard overview of the system displaying data on cpu, disks, network, users, memory, swap and network.
+        Processes
+        List processes (top like) and view detailed process information about each process.
+        Apart from a detailed process overview this is also available for each process:
+        Open files
+        Open connections
+        Memory maps
+        Child processes
+        Resource limits
+        Disks
+        List info on all disks and partitions.
+        Network
+        List info on all network interfaces and the current throughput. System-wide open connections listing with filtering. Somewhat like netstat.
+        Logs
+        Tail and search logs. The logs are added by patterns (like /var/log/*.log) which are checked periodically to account for new or deleted files.
+        Multi-node/Cluster Support for multiple agent nodes that is either specified by a config or will register themselves on start-up to a common psdash node that runs the web interface.
+        All data is updated automatically, no need to refresh
+        The GUI is pretty much a modified bootstrap example as I'm no designer at all. If you got a feel for design and like to improve the UI parts of psdash, please create a pull request with your changes. It would be much appreciated as there's much room for improvements.
+
 **1.主节点和agent节点都执行下面的命令(安装psdash)**
 >Debian/Ubuntu:
 
