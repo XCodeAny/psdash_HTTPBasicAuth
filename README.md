@@ -3,35 +3,33 @@
 **1.主节点和agent节点都执行下面的命令(安装psdash)**
 >Debian/Ubuntu:
 
->apt-get install build-essential python-dev -y
+>># apt-get install build-essential python-dev -y
 
 >RHEL (Fedora, CentOS):
 
->yum groupinstall "Development Tools"  -y
+>># yum groupinstall "Development Tools"  -y
 
->yum install python-devel  -y
+>># yum install python-devel  -y
 
->yum install python-setuptools  -y
+>># yum install python-setuptools  -y
 
->git clone https://github.com/Jahaja/psdash.git 
+>># git clone https://github.com/Jahaja/psdash.git 
 
->cd psdash 
+>># cd psdash 
 
->pip install -U setuptools
+>># pip install -U setuptools
 
->python setup.py install
+>># python setup.py install
 
 **2.主节点执行**
 
->pip install flask-httpauth
+>># pip install flask-httpauth
 
->git clone https://github.com/wenguonideshou/psdash_HTTPBasicAuth.git
+>># git clone https://github.com/wenguonideshou/psdash_HTTPBasicAuth.git
 
->cd psdash_HTTPBasicAuth
+>># cd psdash_HTTPBasicAuth
 
->python run.py -l '/var/log/**/*.log'     
-
--l '日志目录'   支持.*?
+>># python run.py -l '/var/log/**/*.log'     
 
 **3.agent节点执行**
 
