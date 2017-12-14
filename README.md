@@ -37,7 +37,7 @@
 
 >psdash -a --register-as xxx -l '/var/log/**/*.log' --register-to http://主节点IP:5000
 
-##如何修改参数？
+## 如何修改参数？
 
 在run.py的app = Flask(__name__)下面添加如下语句
 
