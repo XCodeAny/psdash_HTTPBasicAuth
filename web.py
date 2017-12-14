@@ -279,7 +279,6 @@ def view_disks():
 @auth.login_required
 def view_logs():
     available_logs = current_service.get_logs()
-    print available_logs
     available_logs.sort(cmp=lambda x1, x2: locale.strcoll(x1['path'], x2['path']))
     return render_template(
         'logs.html',
